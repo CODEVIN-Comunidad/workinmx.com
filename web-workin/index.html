@@ -489,6 +489,7 @@
 	</div>
 	<!-- /Numbers -->
 
+
 	<!-- Pricing -->
 	<div id="pricing" class="section md-padding">
 
@@ -507,11 +508,28 @@
 					 case 1:
 					          horas.style.display = 'block';
 					          mes.style.display = 'none';
+							  
+							  $('#bHoras').removeClass('white-btn').addClass('main-btn')
+							  $('#bMes').removeClass('main-btn').addClass('white-btn')
+							  $('#bSala').removeClass('main-btn').addClass('white-btn')
 					    break;
 
 					 case 2:
 					          horas.style.display = 'none';
 					          mes.style.display = 'block';
+							  
+							  $('#bHoras').removeClass('main-btn').addClass('white-btn')
+							  $('#bMes').removeClass('white-btn').addClass('main-btn')
+							  $('#bSala').removeClass('main-btn').addClass('white-btn')
+					    break;
+					
+					 case 3:
+					          horas.style.display = 'none';
+					          mes.style.display = 'block';
+							  
+							  $('#bHoras').removeClass('main-btn').addClass('white-btn')
+							  $('#bMes').removeClass('main-btn').addClass('white-btn')
+							  $('#bSala').removeClass('white-btn').addClass('main-btn')
 					    break;
 
 					default:
@@ -525,15 +543,16 @@
 					<h2 class="title">Tabla de precios</h2>
 
 					<!-- Buttons pricing -->
-					<button onclick="myFunction(1)" class="white-btn" style="border: 2px solid #0000001f;">Planes por hora</button>
-					<button onclick="myFunction(2)" class="main-btn">Membresías mensuales</button>
+					<button id="bHoras" onclick="myFunction(1)" class="main-btn" style="border: 2px solid #0000001f;">Planes por hora</button>
+					<button id="bMes" onclick="myFunction(2)" class="white-btn" style="border: 2px solid #0000001f;">Membresías mensuales</button>
+					<button id="bSala" onclick="myFunction(3)" class="white-btn" style="border: 2px solid #0000001f;">Salas</button>
 					<!-- /Buttons pricing -->
 
 				</div>
 				<!-- /Section header -->
 
 				<!-- pricing horas -->
-				<div id=horas display="none">
+				<div id='horas' style="display: block;">
 
 					<!-- pricing basic -->
 					<div class="col-sm-4">
@@ -620,7 +639,7 @@
 				<!-- /pricing horas -->
 
 				<!-- princing mes -->
-				<div id="mes" display="block">
+				<div id="mes" style="display: none;">
 
 					<!-- pricing ligth -->
 					<div id="mes" class="col-sm-4">
