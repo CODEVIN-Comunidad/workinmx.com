@@ -498,92 +498,213 @@
 			<!-- Row -->
 			<div class="row">
 
+				<script>
+					function myFunction(idButton) {
+					  var horas = document.getElementById('horas');
+					  var mes = document.getElementById('mes');
+
+					 switch(idButton) {
+					 case 1:
+					          horas.style.display = 'block';
+					          mes.style.display = 'none';
+					    break;
+
+					 case 2:
+					          horas.style.display = 'none';
+					          mes.style.display = 'block';
+					    break;
+
+					default:
+					        alert("hay un problema: No existe el producto.")
+		        			}
+					   }
+				</script>
+
 				<!-- Section header -->
 				<div class="section-header text-center">
 					<h2 class="title">Tabla de precios</h2>
+
+					<!-- Buttons pricing -->
+					<button onclick="myFunction(1)" class="white-btn" style="border: 2px solid #0000001f;">Planes por hora</button>
+					<button onclick="myFunction(2)" class="main-btn">Membresías mensuales</button>
+					<!-- /Buttons pricing -->
+
 				</div>
 				<!-- /Section header -->
 
-				<!-- pricing -->
-				<div class="col-sm-4">
-					<div class="pricing">
-						<div class="price-head">
-							<span class="price-title">Basic</span>
-							<div class="price">
-								<h3>$30<span class="duration">/ 1 Hora</span></h3>
-							</div>
-						</div>
-						<ul class="price-content">
-							<li>
-								<p>1 Hora de Cowork</p>
-							</li>
-							<li>
-								<p>Café, Agua y Té ilimitado</p>
-							</li>
-							<li>
-								<p><br></p>
-							</li>
-						</ul>
-						<div class="price-btn">
-							<button class="outline-btn">Comprar ahora</button>
-						</div>
-					</div>
-				</div>
-				<!-- /pricing -->
+				<!-- pricing horas -->
+				<div id=horas display="none">
 
-				<!-- pricing -->
-				<div class="col-sm-4">
-					<div class="pricing">
-						<div class="price-head">
-							<span class="price-title">Day Pass</span>
-							<div class="price">
-								<h3>$99<span class="duration">/ Día</span></h3>
+					<!-- pricing basic -->
+					<div class="col-sm-4">
+						<div class="pricing">
+							<div class="price-head">
+								<span class="price-title">Basic</span>
+								<div class="price">
+									<h3>$30<span class="duration">/ 1 Hora</span></h3>
+								</div>
+							</div>
+							<ul class="price-content">
+								<li>
+									<p>1 Hora de Cowork</p>
+								</li>
+								<li>
+									<p>Café, Agua y Té ilimitado</p>
+								</li>
+								<li>
+									<p><br></p>
+								</li>
+							</ul>
+							<div class="price-btn">
+								<button class="outline-btn">Comprar ahora</button>
 							</div>
 						</div>
-						<ul class="price-content">
-							<li>
-								<p>1 Día de Cowork</p>
-							</li>
-							<li>
-								<p>Café, Agua y Té ilimitado</p>
-							</li>
-							<li>
-								<p><br></p>
-							</li>
-						</ul>
-						<div class="price-btn">
-							<button class="outline-btn">Comprar ahora</button>
-						</div>
 					</div>
-				</div>
-				<!-- /pricing -->
+					<!-- /pricing basic -->
 
-				<!-- pricing -->
-				<div class="col-sm-4">
-					<div class="pricing">
-						<div class="price-head">
-							<span class="price-title">Day Pass Estudiante</span>
-							<div class="price">
-								<h3>$49<span class="duration">/ Día</span></h3>
+					<!-- pricing day pass -->
+					<div class="col-sm-4">
+						<div class="pricing">
+							<div class="price-head">
+								<span class="price-title">Day Pass</span>
+								<div class="price">
+									<h3>$99<span class="duration">/ Día</span></h3>
+								</div>
+							</div>
+							<ul class="price-content">
+								<li>
+									<p>1 Día de Cowork</p>
+								</li>
+								<li>
+									<p>Café, Agua y Té ilimitado</p>
+								</li>
+								<li>
+									<p><br></p>
+								</li>
+							</ul>
+							<div class="price-btn">
+								<button class="outline-btn">Comprar ahora</button>
 							</div>
 						</div>
-						<ul class="price-content">
-							<li>
-								<p>1 Día de Cowork</p>
-							</li>
-							<li>
-								<p>Café, Agua y Té ilimitado</p>
-							</li>
-							<li>
-								<p>*Presentando credencial vigente</p>
-							</li>
-						</ul>
-						<div class="price-btn">
-							<button class="outline-btn">Comprar ahora</button>
+					</div>
+					<!-- /pricing day pass -->
+
+					<!-- pricing day pass estudiante -->
+					<div class="col-sm-4">
+						<div class="pricing">
+							<div class="price-head">
+								<span class="price-title">Day Pass Estudiante</span>
+								<div class="price">
+									<h3>$49<span class="duration">/ Día</span></h3>
+								</div>
+							</div>
+							<ul class="price-content">
+								<li>
+									<p>1 Día de Cowork</p>
+								</li>
+								<li>
+									<p>Café, Agua y Té ilimitado</p>
+								</li>
+								<li>
+									<p>*Presentando credencial vigente</p>
+								</li>
+							</ul>
+							<div class="price-btn">
+								<button class="outline-btn">Comprar ahora</button>
+							</div>
 						</div>
 					</div>
+					<!-- /pricing day pass estudiante -->
+
 				</div>
-				<!-- /pricing -->
+				<!-- /pricing horas -->
+
+				<!-- princing mes -->
+				<div id="mes" display="block">
+
+					<!-- pricing ligth -->
+					<div id="mes" class="col-sm-4">
+						<div class="pricing">
+							<div class="price-head">
+								<span class="price-title">Light</span>
+								<div class="price">
+									<h3>$1199<span class="duration">/ 1 Mes</span></h3>
+								</div>
+							</div>
+							<ul class="price-content">
+								<li>
+									<p>50 Hora de Cowork</p>
+								</li>
+								<li>
+									<p>Espacio individual de trabajo</p>
+								</li>
+								<li>
+									<p>Acceso sin llave</p>
+								</li>
+							</ul>
+							<div class="price-btn">
+								<button class="outline-btn">Comprar ahora</button>
+							</div>
+						</div>
+					</div>
+					<!-- /pricing ligth -->
+
+					<!-- pricing pro -->
+					<div id="mes" class="col-sm-4">
+						<div class="pricing">
+							<div class="price-head">
+								<span class="price-title">Pro</span>
+								<div class="price">
+									<h3>$1499<span class="duration">/ 1 Mes</span></h3>
+								</div>
+							</div>
+							<ul class="price-content">
+								<li>
+									<p>80 horas de Cowork</p>
+								</li>
+								<li>
+									<p>Espacio individual de trabajo</p>
+								</li>
+								<li>
+									<p>Acceso sin llave</p>
+								</li>
+							</ul>
+							<div class="price-btn">
+								<button class="outline-btn">Comprar ahora</button>
+							</div>
+						</div>
+					</div>
+					<!-- /pricing pro -->
+
+					<!-- pricing ki -->
+					<div id="mes" class="col-sm-4">
+						<div class="pricing">
+							<div class="price-head">
+								<span class="price-title">KI</span>
+								<div class="price">
+									<h3>$2499<span class="duration">/ 1 Mes</span></h3>
+								</div>
+							</div>
+							<ul class="price-content">
+								<li>
+									<p>Full time</p>
+								</li>
+								<li>
+									<p>Espacio individual de trabajo</p>
+								</li>
+								<li>
+									<p>Acceso sin llave</p>
+								</li>
+							</ul>
+							<div class="price-btn">
+								<button class="outline-btn">Comprar ahora</button>
+							</div>
+						</div>
+					</div>
+					<!-- /pricing ki -->
+
+				</div>
+				<!-- /pricing mes -->	
 
 			</div>
 			<!-- Row -->
@@ -592,7 +713,7 @@
 		<!-- /Container -->
 
 	</div>
-	<!-- /Pricing -->
+	<!-- /Pricing  -->
 
 
 	<!-- Testimonial -->
