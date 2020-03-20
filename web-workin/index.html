@@ -575,7 +575,7 @@
 								</li>
 							</ul>
 							<div class="price-btn">
-								<button class="outline-btn">Comprar ahora</button>
+								<button class="outline-btn" data-toggle="modal" data-target="#precios01">Comprar ahora</button>
 							</div>
 						</div>
 					</div>
@@ -732,6 +732,34 @@
 		<!-- /Container -->
 
 	</div>
+	
+	<!-- Modal Precios-->
+  <div class="modal fade" id="precios01" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+		  <h4 class="modal-title">Plan Basic</h4>
+        </div>
+        <div class="modal-body">
+          <h3>$30<span class="duration">/ 1 Hora</span></h3>
+		  <ul class="price-content">
+			 <li> <p>1 Hora de Cowork</p> </li>
+			 <li> <p>Café, Agua y Té ilimitado</p> </li>
+		  </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- End Modal --->
+	
 	<!-- /Pricing  -->
 
 
@@ -966,15 +994,13 @@
 		<!-- Container -->
 		<div class="container">
 
-			<!-- Row -->
-			<div class="row">
 
 				<!-- Section-header -->
 				<div class="section-header text-center">
 					<h2 class="title">Contacto</h2>
 				</div>
 				<!-- /Section-header -->
-
+				
 				<!-- contact -->
 				<div class="col-sm-4">
 					<div class="contact">
@@ -1005,20 +1031,30 @@
 				</div>
 				<!-- /contact -->
 
-				<!-- contact form -->
-				<div class="col-md-8 col-md-offset-2">
-					<form class="contact-form">
-						<input type="text" class="input" placeholder="Nombre">
-						<input type="email" class="input" placeholder="Correo">
-						<input type="text" class="input" placeholder="Asunto">
-						<textarea class="input" placeholder="Mensaje"></textarea>
-						<button class="main-btn">Enviar mensaje</button>
-					</form>
-				</div>
-				<!-- /contact form -->
+				<!-- Row -->
+				<div class="row">
+				<!--Grid column-->
 
-			</div>
-			<!-- /Row -->
+					<!--Grid column-->
+					<div class="col-sm-6">
+					<!--Google map-->
+						<div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14849.812376599608!2d-104.8831782!3d21.4899656!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2cb09aa1a3651cc2!2sWorkin%20Tepic!5e0!3m2!1ses-419!2smx!4v1584663126254!5m2!1ses-419!2smx" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+					<!-- contact form -->
+					<div class="col-sm-6">
+						<form class="contact-form">
+							<input type="text" class="input" placeholder="Nombre">
+							<input type="email" class="input" placeholder="Correo">
+							<input type="text" class="input" placeholder="Asunto">
+							<textarea class="input" placeholder="Mensaje"></textarea>
+							<button class="main-btn">Enviar mensaje</button>
+						</form>
+					</div>
+					<!-- /contact form -->
+				</div>
+				<!-- /Row -->
 
 		</div>
 		<!-- /Container -->
