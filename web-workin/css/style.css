@@ -956,20 +956,19 @@ header {
     padding-top: 20px;
     padding-bottom: 40px;
 }
-
 /*------------------------------------*\
-	Testimonial
+    Testimonial
 \*------------------------------------*/
 
 .testimonial {
-    margin: 15px 0px;
+    margin: 5px 0px;
 }
 
 .testimonial-meta {
     position: relative;
-    padding-left: 90px;
-    height: 70px;
-    margin-bottom: 20px;
+    padding-left: 210px;
+    height: 200px;
+    margin-bottom: 10px;
     padding-top: 10px;
 }
 
@@ -977,8 +976,8 @@ header {
     position: absolute;
     left: 0;
     top: 0;
-    width: 70px !important;
-    height: 70px !important;
+    width: 200px !important;
+    height: 200px !important;
     border-radius: 50%;
 }
 
@@ -987,7 +986,7 @@ header {
 }
 
 .testimonial span {
-    font-size: 14px;
+    font-size: 20px;
     color: #FF5F00;
     text-transform: uppercase;
 }
@@ -1752,6 +1751,9 @@ header {
   }
 }
 
+/*------------------------------------*\
+    Google Maps
+\*------------------------------------*/
 .map-container-6{
 overflow:hidden;
 padding-bottom:56.25%;
