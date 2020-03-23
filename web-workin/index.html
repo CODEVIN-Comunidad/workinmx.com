@@ -503,33 +503,37 @@
 					function myFunction(idButton) {
 					  var horas = document.getElementById('horas');
 					  var mes = document.getElementById('mes');
+					  var salas = document.getElementById('salas');
 
 					 switch(idButton) {
 					 case 1:
 					          horas.style.display = 'block';
 					          mes.style.display = 'none';
+					          salas.style.display = 'none';
 							  
 							  $('#bHoras').removeClass('white-btn').addClass('main-btn')
 							  $('#bMes').removeClass('main-btn').addClass('white-btn')
-							  $('#bSala').removeClass('main-btn').addClass('white-btn')
+							  $('#bSalas').removeClass('main-btn').addClass('white-btn')
 					    break;
 
 					 case 2:
 					          horas.style.display = 'none';
 					          mes.style.display = 'block';
-							  
+							  salas.style.display = 'none';
+
 							  $('#bHoras').removeClass('main-btn').addClass('white-btn')
 							  $('#bMes').removeClass('white-btn').addClass('main-btn')
-							  $('#bSala').removeClass('main-btn').addClass('white-btn')
+							  $('#bSalas').removeClass('main-btn').addClass('white-btn')
 					    break;
 					
 					 case 3:
 					          horas.style.display = 'none';
-					          mes.style.display = 'block';
-							  
+					          mes.style.display = 'none';
+							  salas.style.display = 'block';
+
 							  $('#bHoras').removeClass('main-btn').addClass('white-btn')
 							  $('#bMes').removeClass('main-btn').addClass('white-btn')
-							  $('#bSala').removeClass('white-btn').addClass('main-btn')
+							  $('#bSalas').removeClass('white-btn').addClass('main-btn')
 					    break;
 
 					default:
@@ -545,7 +549,7 @@
 					<!-- Buttons pricing -->
 					<button id="bHoras" onclick="myFunction(1)" class="main-btn" style="border: 2px solid #0000001f;">Planes por hora</button>
 					<button id="bMes" onclick="myFunction(2)" class="white-btn" style="border: 2px solid #0000001f;">Membresías mensuales</button>
-					<button id="bSala" onclick="myFunction(3)" class="white-btn" style="border: 2px solid #0000001f;">Salas</button>
+					<button id="bSalas" onclick="myFunction(3)" class="white-btn" style="border: 2px solid #0000001f;">Salas</button>
 					<!-- /Buttons pricing -->
 
 				</div>
@@ -724,8 +728,94 @@
 					<!-- /pricing ki -->
 
 				</div>
-				<!-- /pricing mes -->	
+				<!-- /pricing mes -->
 
+				<!-- princing salas -->
+				<div id="salas" style="display: none;">
+
+					<!-- pricing Sala01 -->
+					<div id="salas" class="col-sm-4">
+						<div class="pricing">
+							<div class="price-head">
+								<span class="price-title">Sala01</span>
+								<div class="price">
+									<h3>$???<span class="duration">/ ????</span></h3>
+								</div>
+							</div>
+							<ul class="price-content">
+								<li>
+									<p>???</p>
+								</li>
+								<li>
+									<p>???</p>
+								</li>
+								<li>
+									<p>???</p>
+								</li>
+							</ul>
+							<div class="price-btn">
+								<button class="outline-btn" data-toggle="modal" data-target="#precios07">Comprar ahora</button>
+							</div>
+						</div>
+					</div>
+					<!-- /pricing Sala01 -->
+
+					<!-- pricing Sala02 -->
+					<div id="salas" class="col-sm-4">
+						<div class="pricing">
+							<div class="price-head">
+								<span class="price-title">Sala02</span>
+								<div class="price">
+									<h3>$???<span class="duration">/ ????</span></h3>
+								</div>
+							</div>
+							<ul class="price-content">
+								<li>
+									<p>???</p>
+								</li>
+								<li>
+									<p>???</p>
+								</li>
+								<li>
+									<p>???</p>
+								</li>
+							</ul>
+							<div class="price-btn">
+								<button class="outline-btn" data-toggle="modal" data-target="#precios08">Comprar ahora</button>
+							</div>
+						</div>
+					</div>
+					<!-- /pricing Sala02 -->
+
+					<!-- pricing Sala03 -->
+					<div id="salas" class="col-sm-4">
+						<div class="pricing">
+							<div class="price-head">
+								<span class="price-title">Sala03</span>
+								<div class="price">
+									<h3>$???<span class="duration">/ ????</span></h3>
+								</div>
+							</div>
+							<ul class="price-content">
+								<li>
+									<p>???</p>
+								</li>
+								<li>
+									<p>???</p>
+								</li>
+								<li>
+									<p>???</p>
+								</li>
+							</ul>
+							<div class="price-btn">
+								<button class="outline-btn" data-toggle="modal" data-target="#precios09">Comprar ahora</button>
+							</div>
+						</div>
+					</div>
+					<!-- /pricing Sala03 -->
+
+				</div>
+				<!-- /pricing salas -->
 			</div>
 			<!-- Row -->
 
@@ -904,6 +994,79 @@
 		      
 		</div>
 	</div>
+
+	<div class="modal fade" id="precios07" role="dialog">
+	    <div class="modal-dialog modal-lg">
+	    
+	      	<!-- Modal content-->
+	      	<div class="modal-content">
+	        	<div class="modal-header">
+	          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+	          
+			  		<h4 class="modal-title">???</h4>
+	        	</div>
+	        	<div class="modal-body">
+		          	<h3>$???<span class="duration">/ ????</span></h3>
+				  	<ul class="price-content">
+					 	<li> <p>?????????????????</p> </li>
+					 </ul>
+		        </div>
+		        <div class="modal-footer">
+		          	<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+		        </div>
+	      	</div>
+		      
+		</div>
+	</div>
+
+	<div class="modal fade" id="precios08" role="dialog">
+	    <div class="modal-dialog modal-lg">
+	    
+	      	<!-- Modal content-->
+	      	<div class="modal-content">
+	        	<div class="modal-header">
+	          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+	          
+			  		<h4 class="modal-title">???</h4>
+	        	</div>
+	        	<div class="modal-body">
+		          	<h3>$???<span class="duration">/ ????</span></h3>
+				  	<ul class="price-content">
+					 	<li> <p>?????????????????</p> </li>
+					 </ul>
+		        </div>
+		        <div class="modal-footer">
+		          	<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+		        </div>
+	      	</div>
+		      
+		</div>
+	</div>
+
+	<div class="modal fade" id="precios09" role="dialog">
+	    <div class="modal-dialog modal-lg">
+	    
+	      	<!-- Modal content-->
+	      	<div class="modal-content">
+	        	<div class="modal-header">
+	          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+	          
+			  		<h4 class="modal-title">???</h4>
+	        	</div>
+	        	<div class="modal-body">
+		          	<h3>$???<span class="duration">/ ????</span></h3>
+				  	<ul class="price-content">
+					 	<li> <p>?????????????????</p> </li>
+					 </ul>
+		        </div>
+		        <div class="modal-footer">
+		          	<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+		        </div>
+	      	</div>
+		      
+		</div>
+	</div>
+
 
 	<!-- End Modal --->
 	
@@ -1120,22 +1283,23 @@
 	<!-- /Team -->
 
 	<!-- Blog -->
+	<!--
 	<div id="blog" class="section md-padding bg-grey">
-
+	-->
 		<!-- Container -->
-		<div class="container">
-
+	<!--	<div class="container">
+	-->
 			<!-- Row -->
-			<div class="row">
-
+	<!--		<div class="row">
+	-->
 				<!-- Section header -->
-				<div class="section-header text-center">
+	<!--			<div class="section-header text-center">
 					<h2 class="title">Blog</h2>
-				</div>
+				</div>-->
 				<!-- /Section header -->
 
 				<!-- blog -->
-				<div class="col-md-4">
+	<!--			<div class="col-md-4">
 					<div class="blog">
 						<div class="blog-img">
 							<img class="img-responsive" src="./img/blog1.jpg" alt="">
@@ -1151,11 +1315,11 @@
 							<a href="blog-single.html">Read more</a>
 						</div>
 					</div>
-				</div>
+				</div>-->
 				<!-- /blog -->
 
 				<!-- blog -->
-				<div class="col-md-4">
+		<!--		<div class="col-md-4">
 					<div class="blog">
 						<div class="blog-img">
 							<img class="img-responsive" src="./img/blog2.jpg" alt="">
@@ -1171,11 +1335,11 @@
 							<a href="blog-single.html">Read more</a>
 						</div>
 					</div>
-				</div>
+				</div>-->
 				<!-- /blog -->
 
 				<!-- blog -->
-				<div class="col-md-4">
+		<!--		<div class="col-md-4">
 					<div class="blog">
 						<div class="blog-img">
 							<img class="img-responsive"  src="./img/blog3.jpg" alt="">
@@ -1191,20 +1355,20 @@
 							<a href="blog-single.html">Read more</a>
 						</div>
 					</div>
-				</div>
+				</div>-->
 				<!-- /blog -->
 
-			</div>
+	<!--		</div>-->
 			<!-- /Row -->
 
-		</div>
+	<!--	</div>-->
 		<!-- /Container -->
 
-	</div>
+	<!--</div>-->
 	<!-- /Blog -->
 
 	<!-- Contact -->
-	<div id="contact" class="section md-padding">
+	<div id="contact" class="section md-padding bg-grey">
 
 		<!-- Container -->
 		<div class="container">
