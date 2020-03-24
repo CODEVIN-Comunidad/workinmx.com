@@ -30,6 +30,22 @@ $(document).ready(function () {
     });
 
 });
+//Kiworker
+$(document).ready(function () {
+    var owl = $('.owl-carousel3');
+    owl.owlCarousel({
+        items: 5,
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        slideTransition: 'linear',
+        autoplayTimeout: 0,
+        autoplaySpeed: 5000,
+        autoplayHoverPause: false
+
+    });
+
+});
 
 //*******************************************
 //***CODE BELOW===> This is a custom owl carousel js, you can add it by pasting the code below into a js file and use it in your website.
