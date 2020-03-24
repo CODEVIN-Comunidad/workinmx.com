@@ -25,15 +25,16 @@ Table OF Contents
 10 > Pricing
 11 > Testimonial
 12 > Team
-13 > Blog
-14 > Blog post
-15 > Blog sidebar
-16 > Contact
-17 > Footer
-18 > Responsive
-19 > Owl theme
-20 > Back to top
-21 > Preloader
+13 > Partners 
+14 > Blog
+15 > Blog post
+16 > Blog sidebar
+17 > Contact
+18 > Footer
+19 > Responsive
+20 > Owl theme
+21 > Back to top
+22 > Preloader
 
 ------------------------------------*/
 
@@ -192,6 +193,15 @@ ul, ol {
   	background-color: #FF5F00;
     margin-top: 20px;
 }
+
+h3.title-partner{
+    color: #FFF;
+    font-size: 28px;
+}
+
+ .title-partner:after{
+    display: none;
+ }
 
 .text-center .title:after {
     margin: 20px auto 0px;
@@ -1095,6 +1105,40 @@ header {
     opacity: 1;
 }
 
+/*------------------------------------*\
+    Testimonial
+\*------------------------------------*/
+
+.partners {
+    margin: 5px 0px;
+}
+
+.partners-meta {
+    position: relative;
+    padding-left: 210px;
+    height: 200px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.partners img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 50%;
+}
+
+.partners h3 {
+    margin-bottom: 5px;
+}
+
+.partners span {
+    font-size: 20px;
+    color: #FF5F00;
+    text-transform: uppercase;
+}
 
 /*------------------------------------*\
 	Blog
