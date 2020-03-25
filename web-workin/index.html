@@ -1859,12 +1859,12 @@
 					</div>
 					<!-- contact form -->
 					<div class="col-sm-6">
-						<form class="contact-form">
-							<input type="text" class="input" placeholder="Nombre">
-							<input type="email" class="input" placeholder="Correo">
-							<input type="text" class="input" placeholder="Asunto">
-							<textarea class="input" placeholder="Mensaje"></textarea>
-							<button class="main-btn">Enviar mensaje</button>
+						<form class="contact-form" id="myform">
+							<input id="from_name" type="text" class="input" placeholder="Nombre" name="from_name" >
+							<input id="from_email" type="email" class="input" placeholder="Correo" name="from_email">
+							<input id="subject" type="text" class="input" placeholder="Asunto" name="subject">
+							<textarea id="message" class="input" placeholder="Mensaje" name="message"></textarea>
+							<button class="main-btn" >Enviar mensaje</button>
 						</form>
 					</div>
 					<!-- /contact form -->
@@ -1944,6 +1944,10 @@
 	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/logos_carousel.js"></script>
+
+	<!--contact form querys-->	
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+	<script type="text/javascript" src="js/contact-form.js"></script>
 
 
 </body>
